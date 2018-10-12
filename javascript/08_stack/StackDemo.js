@@ -1,3 +1,8 @@
+/**
+ * 1) 入栈
+ * 2) 出栈
+ * */
+
 class Stack {
 
     constructor (length) {
@@ -9,6 +14,7 @@ class Stack {
 
     }
 
+    // 入栈
     pushStack (item) {
 
         if (this.tail > this.length - 1) {
@@ -20,6 +26,7 @@ class Stack {
         this.tail ++
     }
 
+    // 出栈
     popStack () {
 
         if (this.head === this.tail) {
@@ -38,6 +45,7 @@ class Stack {
         return value
     }
 
+    // 展示
     display () {
         // for (var i=0;i<this.items.length;i++) {
         //     console.log(this.items[i])
